@@ -1,0 +1,107 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f093fb, #f5576c); /* Aesthetic gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Add some padding around the body */
+}
+
+/* Container to Stack Form and Resume Vertically */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between form and resume display */
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 25px; /* Increased padding for more space inside the form */
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff; /* Blue border for form */
+}
+
+/* Form Elements */
+form label {
+    display: block;
+    margin-bottom: 8px; /* Increased margin for labels */
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px; /* Increased padding inside input and textarea */
+    margin-bottom: 12px; /* Increased margin between input fields */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 12px 20px; /* Increased padding for the button */
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Resume Display Styling */
+#resume-display {
+    background: #fff;
+    padding: 25px; /* Increased padding inside the resume display */
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff; /* Blue border for resume display */
+}
+
+/* Resume Display Image */
+#display-profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 25px; /* Increased margin below the profile picture */
+}
+
+/* Styling for Lists */
+#display-skills {
+    list-style: none;
+    padding: 0;
+}
+
+#display-skills li {
+    margin-bottom: 10px; /* Increased margin for list items */
+}
+
+/* Edit Button Styling */
+#edit-resume {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+#edit-resume:hover {
+    background: #218838;
+}

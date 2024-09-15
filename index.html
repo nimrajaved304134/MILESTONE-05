@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Path and Shareable Link Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Form Section -->
+        <div class="form-section">
+            <form id="resume-form">
+                <h2>Fill Your Information</h2>
+
+                <!-- Personal Information -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" required>
+
+                <!-- Profile Picture -->
+                <h3>Profile Picture</h3>
+                <label for="profile-pic">Upload Profile Picture:</label>
+                <input type="file" id="profile-pic" accept="image/*" required>
+
+                <!-- Education -->
+                <h3>Education</h3>
+                <label for="education">Degree:</label>
+                <input type="text" id="education" required>
+
+                <!-- Work Experience -->
+                <h3>Work Experience</h3>
+                <label for="work-experience">Job Title:</label>
+                <input type="text" id="work-experience" required>
+
+                <!-- Skills -->
+                <h3>Skills</h3>
+                <input type="text" id="skills" placeholder="Add a skill, separate by commas" required>
+
+                <button type="submit">Generate Resume</button>
+            </form>
+        </div>
+
+        <!-- Dynamic Resume Display Section -->
+        <div class="resume-section" id="resume-display" style="display:none;">
+            <div class="profile-pic-wrapper">
+                <img src="" alt="Profile Picture" class="profile-pic" id="display-profile-pic">
+            </div>
+            <div>
+                <!-- Personal Info -->
+                <section id="personal-info">
+                    <h1 id="display-name"></h1>
+                    <p id="display-email"></p>
+                    <p id="display-phone"></p>
+                </section>
+
+                <!-- Education -->
+                <section id="education">
+                    <h2>Education</h2>
+                    <p id="display-education"></p>
+                </section>
+
+                <!-- Work Experience -->
+                <section id="work-experience">
+                    <h2>Work Experience</h2>
+                    <p id="display-work-experience"></p>
+                </section>
+
+                <!-- Skills -->
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul id="display-skills"></ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
